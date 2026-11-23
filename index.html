@@ -269,7 +269,10 @@ body::before {
 .mp-photo { width: 130px; height: 163px; border-radius: var(--radius-sm); object-fit: cover; border: 3px solid var(--border); display: block; }
 .mp-photo-placeholder { width: 130px; height: 163px; border-radius: var(--radius-sm); background: var(--accent-light); border: 3px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 2.8rem; color: var(--accent-mid); }
 
-.text-input-row { display: flex; gap: 10px; width: 100%; max-width: 460px; }
+.text-input-row { display: flex; flex-wrap: wrap; gap: 8px; width: 100%; max-width: 460px; }
+.text-input-row .quiz-input { min-width: 0; flex: 1 1 160px; }
+.text-input-row .btn { flex-shrink: 0; }
+.text-input-row .btn-primary { flex: 1 1 100%; min-height: 44px; font-size: 1rem; }
 .quiz-input {
   flex: 1; padding: 10px 14px; border: 2px solid var(--border); border-radius: var(--radius-sm);
   background: var(--bg); color: var(--fg); font-size: 0.95rem; font-family: inherit;
